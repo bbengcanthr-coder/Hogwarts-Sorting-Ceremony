@@ -3,25 +3,36 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url('images/hogwarts-bg.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: black;
+  overflow: hidden;
   font-family: 'Cinzel Decorative', serif;
   color: #fff;
   text-align: center;
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .container {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 20px gold;
+  box-shadow: 0 0 25px gold;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .title {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-shadow: 0 0 20px #ffdf70;
 }
 
 .hat {
@@ -29,8 +40,18 @@ body {
   animation: float 3s infinite ease-in-out;
 }
 
-button {
+input {
   margin-top: 20px;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 1.2rem;
   border: none;
@@ -55,8 +76,8 @@ button:hover {
 .hidden { display: none; }
 
 @keyframes glow {
-  from { text-shadow: 0 0 10px gold; }
-  to { text-shadow: 0 0 20px white; }
+  from { text-shadow: 0 0 15px gold; }
+  to { text-shadow: 0 0 30px white; }
 }
 
 @keyframes float {
