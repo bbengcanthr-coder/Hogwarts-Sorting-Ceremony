@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('images/hogwarts-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel Decorative', serif;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px gold;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hat {
+  width: 200px;
+  animation: float 3s infinite ease-in-out;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: gold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ffdf70;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+.hidden { display: none; }
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px gold; }
+  to { text-shadow: 0 0 20px white; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
