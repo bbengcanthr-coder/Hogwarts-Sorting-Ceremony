@@ -25,8 +25,9 @@ startBtn.addEventListener("click", () => {
   result.style.color = house.color;
   result.classList.remove("hidden");
 
-  document.body.style.animation = "flash 1s ease";
-  setTimeout(() => document.body.style.animation = "", 1000);
+  setTimeout(() => {
+    result.classList.add("show");
+  }, 100);
 });
 
 // โหลด particles.js
