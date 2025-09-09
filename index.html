@@ -6,16 +6,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- พื้นหลังประกายดาว -->
+  <div id="particles-js"></div>
+
   <div class="container">
     <h1 class="title">Hogwarts Sorting Ceremony</h1>
     <img src="images/sorting-hat.png" alt="Sorting Hat" class="hat">
+
+    <input type="text" id="username" placeholder="Enter your name..." />
     <button id="startBtn">Start Sorting</button>
+    
     <div id="result" class="result hidden"></div>
   </div>
-  
+
   <audio id="bg-music" src="sounds/background.mp3" loop></audio>
   <audio id="magic-sound" src="sounds/magic.mp3"></audio>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
